@@ -168,7 +168,7 @@ h2{
     color: var(--logo-color);
     font-family: var(--secondary-font);
     font-size: 0.8rem;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 footer{
     grid-column: 1/-1;
@@ -190,3 +190,74 @@ footer > a{
 }
 
 
+
+
+/*PSEUDO CLASSES*/
+input::placeholder{
+    color: var(--logo-color);
+}
+
+input:hover{
+    border: 1px solid var(--logo-color);
+    box-shadow: 2px 2px 1px var(--secondary-color);
+}
+input:focus{
+    background-color: var(--primary-color);
+    border: 2px solid var(--logo-color);
+    outline: none;
+}
+
+.logo:hover{
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.home:hover ,.profile:hover,.messages:hover,.history:hover,.tasks:hover,.communities:hover,.settings:hover,.support:hover,.privacy:hover {
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+h2:hover{
+    text-decoration:underline solid var(--logo-color);
+    cursor: pointer;
+}
+
+.card:hover{
+    font-weight: 900;
+}
+
+.user-acc:hover{
+    cursor: pointer;
+}
+
+.one:hover ,.two:hover ,.three:hover{
+    cursor: pointer;
+    font-weight: 800;
+}
+/*ANIMATION*/ 
+
+.container{
+    display: inline-block;
+}
+.message{
+    padding: 0.1em;
+    border-right: 3px solid var(--logo-color);
+    width: 100%;
+    animation: typing 2s, blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+
+}
+
+@keyframes typing {
+    from {
+    width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+    border-color: transparent
+    }
+}
